@@ -1,0 +1,148 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.footerdiv {
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.footer {
+  grid-column: 1 / span 3;
+  border-style: solid;
+  border-width: 4px;
+  background-color: rgb(190, 241, 200);
+  height: 25vh;
+}
+
+header {
+  grid-column: 1 / span 3;
+  height: 125px;
+  background-image: url("../images/pixels.webp");
+  padding: 10px;
+  margin: 0;
+}
+
+.header h1 {
+  padding-left: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contacts {
+  text-align: center;
+  margin: 50px 40%;
+}
+
+.contacts li {
+   text-align: center;
+}
+
+.grid-container-products div{
+  display: grid;
+  border: 1px solid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.flex-container-products div{
+  display: flex;
+  flex-grow: 1;
+}
+
+.flex-container-products div p, h3{
+  display: flex;
+  flex-grow: 1;
+  margin: auto;
+}
+
+/* .mediapage {
+  background-image: url(images/film.png);
+  background-repeat:repeat;
+  background-size: auto;
+  background-attachment: fixed;
+
+} */
+
+.videos {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.mediapage {
+  position: relative;
+}
+
+.mediapage img {
+  width: 60%;
+  height: auto;
+  opacity: 0.1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+}
+
+
+.navigation a {
+    display: inline-block;
+    padding: 0.5em;
+    width: 125px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.navigation a:hover {
+    background-color: rgba(59, 55, 55, 0.3);
+    border-radius: 10px;
+}
+  
+.producttable {
+  margin: auto;
+  border-width: 4px; 
+  border-color: green;
+  font-family:'Lucida Sans Unicode';
+  color: maroon;
+}
+
+
+table {
+  text-align: center;
+  border-style: double;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 15vw auto 10vw;
+  grid-gap: 0.2em;
+}
+
+
+.sidebar-left, .sidebar-right {
+  background-color: darkgray;
+
+}
+
+
+
+@media(max-width: 600px) {
+  nav, main, aside {
+      grid-column: 1 / span 3;
+  }
+}
+
+

@@ -5,88 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontaktsformulär</title>
+    <title>HolyGrail</title>
+    <link rel="stylesheet" href="skrotkort.css">
+
 </head>
 
 <body>
-    <ul>
-        <li><a href="index.html">Startsida</a></li>
-        <li><a href="products.html">Produkter</a></li>
-        <li><a href="media.html">Media</a></li>
-    </ul>
-    <form action="http://primat.se/services/sendform.aspx?xid=send&xmail=loeveet@gmail.com" method="post">
-        <table>
-            <tr>
-                <td><label for="name">Namn</label></td>
-                <td><input type="text" id="name" name="name"></td>
-            </tr>
-            <br>
-            <tr>
-                <td><label for="address">Adress</label></td>
-                <td><input type="text" id="address" name="address"></td>
-            </tr>
-            <br>
-            <tr>
-                <td><label for="email">Email</label></td>
-                <td><input type="email" id="email" name="email"></td>
-            </tr>
-            <br>
-            <tr>
-                <td><label for="telephonenumber">Telefonnummer</label></td>
-                <td><input type="tel" id="telephonenumber" name="telephonenumber"></td>
-            </tr>
-        </table>
+    <div class="grid">
+        <header class="header">
+            <h1>SkrotOchKornAB</h1>
+        </header>
 
-        <br>
+        <nav class="sidebar-left navigation">
+            <ul id="menyn">
 
-        <p>Privat eller företag</p>
+            </ul>
+        </nav>
+        <main class="content">
+            <form action="http://primat.se/services/sendform.aspx?xid=send&xmail=loeveet@gmail.com" method="post">
+                <label for="name">Namn</label></td>
+                <input type="text" id="name" name="name"></td>
+                <br>
+                    <label for="address">Adress</label>
+                    <input type="text" id="address" name="address">
+                <br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                <br>
+    
+                    <label for="telephonenumber">Telefonnummer</label>
+                    <input type="tel" id="telephonenumber" name="telephonenumber">
+    
+    
+                <br>
+                <div>
+                    <p>Privat eller företag</p>
+    
+                    <input type="radio" name="privateorcompany" id="private" value="private">
+                    <label for="private">Privat</label>
+                    <br>
+    
+                    <input type="radio" name="privateorcompany" id="company" value="company">
+                    <label for="company">Företag</label>
+                    <br>
+    
+                    <p>Antal anställda på företaget</p>
+    
+                    <input type="radio" name="nrofemployees" id="small" value="small">
+                    <label for="small">1-100</label>
+                    <br>
+    
+                    <input type="radio" name="nrofemployees" id="medium" value="medium">
+                    <label for="medium">101-1000</label>
+                    <br>
+    
+                    <input type="radio" name="nrofemployees" id="large" value="large">
+                    <label for="large">Mer än 1000</label>
+                    <br>
+                    <br>
+    
+                    <label for="question">Skriv din fråga här</label><br>
+                    <textarea id="question" name="info" rows="5" cols="40"></textarea>
+                    <br>
+                    <br>
+    
+                    <input type="hidden" name="newsletter" value="nej">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="ja">
+                    <label for="newsletter">Vill du ha nyhetsbrev?</label>
+                    <br>
+                    <br>
+    
+                    <input type="hidden" name="contactpertelephone" value="nej">
+                    <input type="checkbox" id="contactpertelephone" name="contactpertelephone" value="ja">
+                    <label for="contactpertelephone">Vill du bli kontaktad via telefon?</label>
+                    <br>
+                    <br>
+    
+                    <input type="submit" value="Skicka in">
+                </div>
+    
+    
+            </form>
+        </main>
 
-        <input type="radio" name="privateorcompany" id="private" value="private">
-        <label for="private">Privat</label>
-        <br>
+        <aside class="sidebar-right">
+            Right Sidebar
+        </aside>
 
-        <input type="radio" name="privateorcompany" id="company" value="company">
-        <label for="company">Företag</label>
-        <br>
-
-        <p>Antal anställda på företaget</p>
-
-        <input type="radio" name="nrofemployees" id="small" value="small">
-        <label for="small">1-100</label>
-        <br>
-
-        <input type="radio" name="nrofemployees" id="medium" value="medium">
-        <label for="medium">101-1000</label>
-        <br>
-
-        <input type="radio" name="nrofemployees" id="large" value="large">
-        <label for="large">Mer än 1000</label>
-        <br>
-        <br>
-
-        <label for="question">Skriv din fråga här</label><br>
-        <textarea id="question" name="info" rows="5" cols="40"></textarea>
-        <br>
-        <br>
-
-        <input type="hidden" name="newsletter" value="nej">
-        <input type="checkbox" id="newsletter" name="newsletter" value="ja">
-        <label for="newsletter">Vill du ha nyhetsbrev?</label>
-        <br>
-        <br>
-
-        <input type="hidden" name="contactpertelephone" value="nej">
-        <input type="checkbox" id="contactpertelephone" name="contactpertelephone" value="ja">
-        <label for="contactpertelephone">Vill du bli kontaktad via telefon?</label>
-        <br>
-        <br>
-
-        <input type="submit" value="Skicka in">
-
-
-    </form>
-    <iframe src="aboutus.html" width="350" height="1000" style="border: none;"></iframe>
-
+        <footer class="footer">
+            <iframe src="contact.html" style="border: none;"></iframe>
+        </footer>
+    </div>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

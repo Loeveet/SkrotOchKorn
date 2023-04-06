@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media</title>
-</head>
-<body>
-    <a href="index.html">Tillbaka till start</a>
-    <br>
-    <video src="images/trucks.mp4" width="560" height="315" controls></video>
-    <br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/hJIBp98DztA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <title>HolyGrail</title>
+    <link rel="stylesheet" href="skrotkort.css">
 
+</head>
+
+<body>
+    <div class="grid">
+        <header class="header">
+            <h1>SkrotOchKornAB</h1>
+        </header>
+
+        <nav class="sidebar-left navigation">
+            <ul id="menyn">
+
+            </ul>
+        </nav>
+        <main class="content">
+            <div class="mediapage">
+                <img src="images/film.png" alt="">
+                <div class="videos">
+                    <video src="images/trucks.mp4" width="400" height="auto" controls></video>
+                    <br>
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/hJIBp98DztA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar-right">
+            Right Sidebar
+        </aside>
+
+        <footer class="footer">
+            <iframe src="contact.html" style="border: none;"></iframe>
+        </footer>
+    </div>
+    <script src="script/script.js"></script>
 </body>
+
 </html>

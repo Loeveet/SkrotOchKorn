@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startsida</title>
+    <title>HolyGrail</title>
+    <link rel="stylesheet" href="skrotkort.css">
+
+
 </head>
+
 <body>
-    <h1>SkrotOchKornAB</h1>
-    <img src="images/office.png" width="400"/>
-    <h3>Vi erbjuder:</h3>
-    <p>Stora och starka maskiner</p>
-    <h3>Om oss:</h3>
-    <p>Vi är sköna och gör det vi säger</p>
+    <div class="grid">
+        <header class="header">
+            <h1>SkrotOchKornAB</h1>
+        </header>
 
-    <ul>
-        <li><a href="products.html">Produkter</a></li>
-        <li><a href="aboutus.html">Kontakta oss</a></li>
-        <li><a href="contactform.html">Kontaktsformulär</a></li>
-        <li><a href="media.html">Media</a></li>
-    </ul>
+        <nav class="sidebar-left navigation">
+            <ul id="menyn">
 
-    
+            </ul>
+        </nav>
+        <main class="content">
+            <img src="images/office.png" width="400" />
+            <h3>Vi erbjuder:</h3>
+            <p>Stora och starka maskiner</p>
+            <h3>Om oss:</h3>
+            <p>Vi är sköna och gör det vi säger</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quis ullam adipisci ad aspernatur
+                tenetur dolor! Perferendis cupiditate, nulla nam temporibus voluptas mollitia alias dolorum blanditiis
+                id expedita optio nostrum.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quis ullam adipisci ad aspernatur
+                tenetur dolor! Perferendis cupiditate, nulla nam temporibus voluptas mollitia alias dolorum blanditiis
+                id expedita optio nostrum.</p>
+        </main>
+
+        <aside class="sidebar-right">
+            Right Sidebar
+        </aside>
+
+        <footer class="footer">
+            <iframe src="contact.html" style="border: none;"></iframe>
+        </footer>
+    </div>
+    <script src="script/script.js"></script>
 </body>
+
 </html>

@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>HolyGrail</title>
+    <link rel="stylesheet" href="skrotkort.css">
+
 </head>
+
 <body>
-    <a href="index.html">Tillbaka till start</a>
-    <h1>Våra produkter</h1>
+    <div class="grid">
+        <header class="header">
+            <h1>SkrotOchKornAB</h1>
+        </header>
 
-    <table border="1" style="text-align: center;">
-        <tr>
-            <td>Bild</td>
-            <td>Typ</td>
-            <td>Pris</td>
-            <td>Övrig info</td>
-        </tr>
-        <tr>
-            <td><img src="images/digger.png" width="200"/></td>
-            <td>Grävmaskin</td>
-            <td>500kr/dygn</td>
-            <td>"Övrig info"</td>
-        </tr>
-        <tr>
-            <td><img src="images/crane.png" width="200"/></td>
-            <td>Lyftkran</td>
-            <td>2000kr/dygn</td>
-            <td>"Övrig info"</td>
-        </tr>
-        <tr>
-            <td><img src="images/truck.png" width="200"/></td>
-            <td>Lastbil</td>
-            <td>3000kr/dygn</td>
-            <td>"Övrig info"</td>
-        </tr>
+        <nav class="sidebar-left navigation">
+            <ul id="menyn">
+
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Våra produkter</h1>
+
+            <div class="flex-container-products">
+
+                <div class="digger">
+                    <img src="images/digger.png" width="200" />
+                    <h3>Grävmaskin</h3>
+                    <p>500kr</p>
+                    <p>"Övrig info"</p>
+                    <div class="buybutton">
+                        <label for="buydigger">Köp</label>
+                        <input type="checkbox" name="buydigger" id="buydigger" onclick="calculatePrice()" />
+                    </div>
+                </div>
+                <div class="crane">
+                    <img src="images/crane.png" width="200" />
+                    <h3>Lyftkran</h3>
+                    <p>2000kr</p>
+                    <p>"Övrig info"</p>
+                    <label for="buycrane">Köp</label>
+                    <input type="checkbox" name="buycrane" id="buycrane" onclick="calculatePrice()" />
+                </div>
+                <div class="truck">
+                    <img src="images/truck.png" width="200" />
+                    <h3>Lastbil</h3>
+                    <p>3000kr</p>
+                    <p>"Övrig info"</p>
+                    <label for="buytruck">Köp</label>
+                    <input type="checkbox" name="buytruck" id="buytruck" onclick="calculatePrice()" />
+                </div>
 
 
-    </table>
-    <ul>
-        <li><a href="index.html">Startsida</a></li>
-        <li><a href="aboutus.html">Kontakta oss</a></li>
-        <li><a href="contactform.html">Kontaktsformulär</a></li>
-        <li><a href="media.html">Media</a></li>
-    </ul>
-    
+            </div>
+            <div id="totalprice"></div>
+        </main>
+
+        <aside class="sidebar-right">
+            Right Sidebar
+        </aside>
+
+        <footer class="footer">
+            <iframe src="contact.html" style="border: none;"></iframe>
+        </footer>
+    </div>
+    <script src="script/script.js"></script>
 </body>
+
 </html>
